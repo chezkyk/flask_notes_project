@@ -1,0 +1,63 @@
+/* Style for the edit fields container */
+.edit-fields {
+    margin-top: 10px;
+}
+
+/* Input and textarea in the edit fields */
+.edit-fields input,
+.edit-fields textarea {
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Update button in the edit fields */
+.edit-fields button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Hover effect for the update button */
+.edit-fields button:hover {
+    background-color: #0056b3;
+}
+
+/* Style the buttons for delete and edit */
+button {
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Style for the delete button */
+button[onclick^="deleteNote"] {
+    background-color: #dc3545;
+}
+
+button[onclick^="deleteNote"]:hover {
+    background-color: #c82333;
+}
+
+/* Style for the note list items */
+#notes-list li {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+}

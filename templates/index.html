@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Manager</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Note Manager</h1>
+
+        <div class="form-container">
+            <h2>Create Note</h2>
+            <input type="text" id="title" placeholder="Title" required>
+            <textarea id="content" placeholder="Content" required></textarea>
+            <input type="text" id="urgency" placeholder="Urgency">
+            <input type="date" id="date">
+            <button onclick="createNote()">Create Note</button>
+        </div>
+
+        <div class="notes-container">
+            <h2>Notes</h2>
+            <ul id="notes-list"></ul>
+        </div>
+
+        <div class="delete-all-container">
+            <button id="delete-all-btn" onclick="deleteAllNotes()">Delete All Notes</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
+
